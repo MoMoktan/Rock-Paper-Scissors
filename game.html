@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <!-- this is game container where all the things of the screen lies in here -->
+    <div class="game-container"> 
+        <!-- this div is the upper part of the display  -->
+        <div class="upper-section">
+            <h1>welcome to Rock-Paper-Scissor Game</h1>
+
+            <input type="text" id="winning-board" placeholder=" winning-board" >
+        </div>
+
+
+        <!-- this div is the middle part of the display  -->
+        <div class="middle-section">
+
+<!-- right section of the middle part which is human player -->
+            <div class="right">
+                <h4>Player 1 score:</h4>
+
+                <h2 class="score" id="playerScore"> 0</h2>
+<!-- when any of the choices click by the player then those will display in here  -->
+                <input type=""  id="playerChoiceDisplay"> 
+            </div>
+
+<!-- left section of the middle part which is computer  -->
+            <div class="left">
+                <h4>Computer
+                    score:
+                </h4>
+
+                <h2 class="score" id="computerScore"> 0</h2>
+<!-- when any of the choices made by the computer then those will display in here  -->
+                <input type=""  id="computerChoiceDisplay">
+            </div>
+        </div>
+
+<!-- this section where the hand gesture of the rock/paper/scissor will be shown  -->
+
+        <div class="below-section">
+            <span class="emoji" onclick="playGame('rock')">  <i class="far fa-hand-rock"></i> </span>
+            <span class="emoji" onclick="playGame('paper')">  <i class="far fa-hand-paper"></i> </span>
+            <span class="emoji" onclick="playGame('scissors')">  <i class="far fa-hand-scissors"></i> </span>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
