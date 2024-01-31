@@ -45,11 +45,20 @@
 <!-- this section where the hand gesture of the rock/paper/scissor will be shown  -->
 
         <div class="below-section">
-            <span class="emoji" onclick="playGame('rock')">  <i class="far fa-hand-rock"></i> </span>
-            <span class="emoji" onclick="playGame('paper')">  <i class="far fa-hand-paper"></i> </span>
-            <span class="emoji" onclick="playGame('scissors')">  <i class="far fa-hand-scissors"></i> </span>
+            <span onclick="playGame('rock')">  <i class="far fa-hand-rock"></i> </span>
+            <span  onclick="playGame('paper')">  <i class="far fa-hand-paper"></i> </span>
+            <span  onclick="playGame('scissors')">  <i class="far fa-hand-scissors"></i> </span>
+        </div>
+
+
+
+        <div>
+        <h3 id="Result">Result: </h3>
         </div>
     </div>
+
+
+    
 
     <script src="game.js"></script>
 </body>
