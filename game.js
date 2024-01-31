@@ -24,12 +24,34 @@ function playGame(playerChoice) {
     ) {
         // Player wins
         playerScore++;
+        
         document.getElementById('playerScore').innerText = playerScore;
         document.getElementById('winning-board').value = 'Player 1 won!';
     } else {
         // Computer wins
         computerScore++;
+       
         document.getElementById('computerScore').innerText = computerScore;
         document.getElementById('winning-board').value = 'Computer won!';
     }
+    winner();
+}
+
+//for the result part
+const result = document.getElementById("Result");
+
+function winner(){
+
+if(playerScore == 3){
+    
+    result.innerText = ('You Won the game')
+
+}else if(computerScore == 3) {
+    result.innerText= ("Computer Won!!")
+
+
+}else{
+    result.innerText= ("")
+}
+
 }
